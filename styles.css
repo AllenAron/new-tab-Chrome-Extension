@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('images/S24 Kodak Gold-19.jpg'); /* Set your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    color: white; /* Set text color to white for better visibility */
+}
+
+#clock {
+    font-size: 48px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    margin: 20px; /* Add some margin for spacing */
+    text-align: center; /* Center the clock */
+    color: white; /* Ensure the text color is visible */
+    z-index: 1000;
+}
+
+#container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0); /* Adjust transparency for better contrast */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1400px;
+}
+
+#calendar {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#day {
+    display: flex;
+    flex-direction: column;
+    border-width: 2px;
+    border: 2px solid white;
+    background-color: rgba(365, 365, 365, 0.5); /* Header background color */
+    max-width: 10px;
+}
+
+.day-header {
+    flex: 1; /* Ensure each day takes equal space */
+    flex-direction: row;
+    padding: 15px; /* Reduced padding for better fit */
+    margin: 5px;
+    margin-bottom: -5px;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgba(365,365,365, 0.4);
+    line-height: 0.5em;
+}
+
+.day-header:last-child {
+    border-right: none; /* Remove border for the last day */
+}
+
+.day-header strong {
+    display: block; /* Block display for day name */
+    font-size: 20px; /* Day name font size */
+    margin-bottom: 5px; /* Margin below the day name */
+}
+
+.day-header p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size for date */
+    color: black; /* Color for the date */
+}
+
+.day-header i {
+    font-style: italic;
+}
+
+.day-event {
+    flex: 1; /* Ensure each event takes equal space */
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center; /* Center align text */
+    padding: 10px; /* Adjusted padding for better fit */
+    background-color: rgba(0,0,0, 0.4); /* Light background for events */
+    color: black; /* Text color for events */
+    font-size: 12px; /* Reduced font size for events */
+    max-width: 150px;
+}
+
+.day-event:last-child {
+    border-right: none; /* Remove border for the last event */
+}
+
+.day-event-box{
+    flex: 1; /* Ensure each event takes equal space */
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-bottom: 2.5px;
+    margin: 5px;
+    margin-top: 5px;
+    text-align: center; /* Center align text */
+    color: black; /* Text color for events */
+    background-color: rgba(365,365,365, 0.4);
+    font-size: 12px; /* Reduced font size for events */
+    min-height: 5px;
+}
+
+
+/* Style for events */
+#events {
+    display: flex; /* Use flexbox to align events with days */
+    border-top: 1px solid #ddd; /* Separator for events */
+}
+
+.event {
+    flex: 1; /* Ensure each event takes equal space */
+    flex-direction: column;
+    text-align: center; /* Center align text */
+    padding: 5px; /* Adjusted padding for better fit */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for events */
+    color: black; /* Text color for events */
+    font-size: 14px; /* Reduced font size for events */
+}
+
+.event:last-child {
+    border-right: none; /* Remove border for the last event */
+}

@@ -1,0 +1,9 @@
+# Ignore local files
+/local/
+/images/
+
+# Ignore pycache
+__pycache__
+
+# Ignore manifest
+manifest.json
